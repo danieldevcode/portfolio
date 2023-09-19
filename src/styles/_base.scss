@@ -1,0 +1,40 @@
+@import "variables";
+
+:root {
+  --scroll-padding: $scroll-padding;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding);
+}
+
+body {
+  // Font
+  font-size: 16px;
+  font-family: $primary-font;
+  color: $primary-color;
+
+  // Background
+  background-color: $background;
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 51px;
+}
+
+h3 {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 41px;
+}

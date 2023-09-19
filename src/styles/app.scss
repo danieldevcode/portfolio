@@ -1,0 +1,27 @@
+@use "base";
+@import "mixins";
+@import "variables";
+
+.main-container {
+  @include flex($direction: column, $gap: 64px);
+}
+
+section {
+  // Flex
+  @include flex($direction: column);
+
+  // Dimentions
+  width: 100%;
+  padding: 24px 24px;
+
+  // Font
+  font-size: 26px;
+  line-height: 41px;
+
+  // Flex
+  gap: 16px;
+
+  h2 {
+    align-self: flex-start;
+  }
+}

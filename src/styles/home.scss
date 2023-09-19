@@ -1,0 +1,30 @@
+@import "variables";
+
+.home {
+  // Dimentions
+  height: 100vh;
+  
+  // Flex
+  gap: 17px;
+
+  color: $background;
+  background-color: $primary-color;
+
+  h1,
+  h2 {
+    font-family: $secondary-font;
+    font-weight: 400;
+  }
+
+  h1 {
+    align-self: flex-start;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  h2 {
+    align-self: flex-end;
+    text-align: right;
+    font-size: 33px;
+  }
+}

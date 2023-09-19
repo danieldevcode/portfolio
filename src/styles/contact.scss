@@ -1,0 +1,15 @@
+@import "mixins";
+.contact {
+  h2 {
+    align-self: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  
+  .button-container {
+    @include flex($gap: 16px);
+    color: red;
+  }
+}
