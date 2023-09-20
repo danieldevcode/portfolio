@@ -1,30 +1,40 @@
 @import "variables";
+@import "mixins";
 
 .home {
   // Dimentions
   height: 100vh;
-  
-  // Flex
-  gap: 17px;
 
   color: $background;
   background-color: $primary-color;
 
-  h1,
-  h2 {
-    font-family: $secondary-font;
-    font-weight: 400;
-  }
+  .home-title-container {
+    @include flex($direction: column, $gap: 32px);
+    width: 100%;
+    
+    img {
+      align-self: flex-start;
+      width: 100%;
+      max-width: 366px;
+    }
 
-  h1 {
-    align-self: flex-start;
-    font-size: 42px;
-    line-height: 48px;
-  }
+    h1,
+    h2 {
+      font-family: $secondary-font;
+      font-weight: 700;
+    }
 
-  h2 {
-    align-self: flex-end;
-    text-align: right;
-    font-size: 33px;
+    h1 {
+      align-self: flex-start;
+      font-size: 42px;
+      line-height: 48px;
+    }
+
+    h2 {
+      align-self: flex-end;
+      text-align: right;
+      font-size: 42px;
+      line-height: 48px;
+    }
   }
 }

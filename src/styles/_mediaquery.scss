@@ -1,0 +1,42 @@
+@media screen and (min-width: 542px) {
+  .home {
+    .home-title-container {
+      h1,
+      h2 {
+        font-size: 64px;
+        line-height: 66px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .home {
+    .home-title-container {
+      h1,
+      h2 {
+        font-size: 72px;
+        line-height: 74px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+    .about,
+    .work,
+    .contact {
+      max-width: 920px;
+    }
+  
+    .home {
+      .home-title-container {
+        max-width: 1420px;
+  
+        h1, h2{
+          font-size: 132px;
+          line-height: 134px;
+        }
+      }
+    }
+  }

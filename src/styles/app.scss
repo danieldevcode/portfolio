@@ -1,4 +1,5 @@
 @use "base";
+@use "mediaquery";
 @import "mixins";
 @import "variables";
 
@@ -12,7 +13,8 @@ section {
 
   // Dimentions
   width: 100%;
-  padding: 24px 24px;
+
+  padding: 24px 64px;
 
   // Font
   font-size: 26px;
