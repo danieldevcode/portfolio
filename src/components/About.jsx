@@ -5,8 +5,9 @@ function About() {
     <section id="about" className="about">
       <h2>About</h2>
       <p>
-        I&apos;m Daniel Cortes and I&apos;m a software engineer. Currently
-        I&apos;m following the web ways as a front end web developer.
+        I&apos;m Daniel Cortes and I&apos;m a software engineer following the
+        web ways as a Front-end web developer. Recently I&apos;ve been working
+        with React and SASS.
       </p>
     </section>
   );

@@ -6,8 +6,8 @@ import { faAt } from "@fortawesome/free-solid-svg-icons";
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <h2>Contact me</h2>
-      <p>Lets talk about bussiness. I&apos;m available in:</p>
+      <h2>Contact me.</h2>
+      <p>Lets work together. I&apos;m available in:</p>
       <div className="button-container">
         <Button
           text="Linkedin"

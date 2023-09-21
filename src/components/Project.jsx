@@ -11,8 +11,10 @@ function Project({ title, type, imageSrc, description, webHref, codeHref }) {
         <h3 className="project-title">{title}</h3>
         <p className="project-type">{type}</p>
       </div>
+      {description ? (
+        <p className="project-description">{description}</p>
+      ) : null}
       <img className="project-img" src={imageSrc} alt={title} />
-      <p className="project-description">{description}</p>
       <div className="button-container">
         <Button
           text="Website"

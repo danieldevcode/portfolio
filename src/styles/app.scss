@@ -9,21 +9,24 @@
 
 section {
   // Flex
-  @include flex($direction: column);
+  @include flex($direction: column, $align: flex-start);
+  gap: 16px;
 
   // Dimentions
+  padding: 24px 32px;
   width: 100%;
-
-  padding: 24px 64px;
 
   // Font
   font-size: 26px;
   line-height: 41px;
 
-  // Flex
-  gap: 16px;
-
   h2 {
     align-self: flex-start;
   }
+}
+
+.about,
+.work,
+.contact {
+  max-width: 1400px;
 }
