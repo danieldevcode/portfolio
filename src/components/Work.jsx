@@ -5,12 +5,20 @@ import biblebitsImg from "/biblebits.png";
 import randomquotemachineImg from "/randomquotemachine.png";
 import memegeneratorImg from "/memegenerator.png";
 import tenziesImg from "/tenzies.png";
+import markdown from "/markdown-previewer.png";
 
 function Work() {
   return (
     <section id="work" className="work">
       <h2>Work</h2>
       <div className="projects-container">
+        <Project
+          title="Markdown previewer"
+          type="Learning"
+          imageSrc={markdown}
+          webHref="https://danieldevcode.github.io/markdown-previewer/"
+          codeHref="https://github.com/danieldevcode/markdown-previewer"
+        />
         <Project
           title="Biblebits"
           type="Project"
