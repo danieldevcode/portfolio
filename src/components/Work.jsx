@@ -6,12 +6,20 @@ import randomquotemachineImg from "/randomquotemachine.png";
 import memegeneratorImg from "/memegenerator.png";
 import tenziesImg from "/tenzies.png";
 import markdown from "/markdown-previewer.png";
+import drumlaunchpad from "/drumlaunchpad.png";
 
 function Work() {
   return (
     <section id="work" className="work">
       <h2>Work</h2>
       <div className="projects-container">
+        <Project
+          title="Drum launchpad"
+          type="Learning"
+          imageSrc={drumlaunchpad}
+          webHref="https://danieldevcode.github.io/drum-launchpad"
+          codeHref="https://github.com/danieldevcode/drum-launchpad"
+        />
         <Project
           title="Markdown previewer"
           type="Learning"
