@@ -7,6 +7,7 @@ import memegeneratorImg from "/memegenerator.png";
 import tenziesImg from "/tenzies.png";
 import markdown from "/markdown-previewer.png";
 import drumlaunchpad from "/drumlaunchpad.png";
+import calculator from "/calculator.png";
 
 function Work() {
   return (
@@ -14,11 +15,11 @@ function Work() {
       <h2>Work</h2>
       <div className="projects-container">
         <Project
-          title="Drum launchpad"
-          type="Learning"
-          imageSrc={drumlaunchpad}
-          webHref="https://danieldevcode.github.io/drum-launchpad"
-          codeHref="https://github.com/danieldevcode/drum-launchpad"
+          title="Biblebits"
+          type="Project"
+          imageSrc={biblebitsImg}
+          webHref="https://biblebits.danielcortes.tech/"
+          codeHref="https://github.com/danieldevcode/biblebits"
         />
         <Project
           title="Markdown previewer"
@@ -28,11 +29,18 @@ function Work() {
           codeHref="https://github.com/danieldevcode/markdown-previewer"
         />
         <Project
-          title="Biblebits"
-          type="Project"
-          imageSrc={biblebitsImg}
-          webHref="https://biblebits.danielcortes.tech/"
-          codeHref="https://github.com/danieldevcode/biblebits"
+          title="Calculator"
+          type="Learning"
+          imageSrc={calculator}
+          webHref="https://danieldevcode.github.io/calculator"
+          codeHref="https://github.com/danieldevcode/calculator"
+        />
+        <Project
+          title="Drum launchpad"
+          type="Learning"
+          imageSrc={drumlaunchpad}
+          webHref="https://danieldevcode.github.io/drum-launchpad"
+          codeHref="https://github.com/danieldevcode/drum-launchpad"
         />
         <Project
           title="Quotes"
