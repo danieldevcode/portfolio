@@ -1,69 +1,19 @@
 import React from "react";
 import "../styles/work.scss";
 import Project from "./Project";
-import biblebitsImg from "/biblebits.png";
-import randomquotemachineImg from "/randomquotemachine.png";
-import memegeneratorImg from "/memegenerator.png";
-import tenziesImg from "/tenzies.png";
-import markdown from "/markdown-previewer.png";
-import drumlaunchpad from "/drumlaunchpad.png";
-import calculator from "/calculator.png";
+import projectsData from "../data/projects";
 
 function Work() {
+  const projectComponents = projectsData.map(
+    function createProjectFrom(project) {
+      return <Project key={project.title} {...project} />;
+    },
+  );
+
   return (
     <section id="work" className="work">
       <h2>Work</h2>
-      <div className="projects-container">
-        <Project
-          title="Biblebits"
-          type="Project"
-          imageSrc={biblebitsImg}
-          webHref="https://biblebits.danielcortes.tech/"
-          codeHref="https://github.com/danieldevcode/biblebits"
-        />
-        <Project
-          title="Markdown previewer"
-          type="Learning"
-          imageSrc={markdown}
-          webHref="https://danieldevcode.github.io/markdown-previewer/"
-          codeHref="https://github.com/danieldevcode/markdown-previewer"
-        />
-        <Project
-          title="Calculator"
-          type="Learning"
-          imageSrc={calculator}
-          webHref="https://danieldevcode.github.io/calculator"
-          codeHref="https://github.com/danieldevcode/calculator"
-        />
-        <Project
-          title="Drum launchpad"
-          type="Learning"
-          imageSrc={drumlaunchpad}
-          webHref="https://danieldevcode.github.io/drum-launchpad"
-          codeHref="https://github.com/danieldevcode/drum-launchpad"
-        />
-        <Project
-          title="Quotes"
-          type="Learning"
-          imageSrc={randomquotemachineImg}
-          webHref="https://danieldevcode.github.io/randomquotemachine/"
-          codeHref="https://github.com/danieldevcode/randomquotemachine"
-        />
-        <Project
-          title="Tenzies"
-          type="Learning"
-          imageSrc={tenziesImg}
-          webHref="https://danieldevcode.github.io/tenzies/"
-          codeHref="https://github.com/danieldevcode/tenzies"
-        />
-        <Project
-          title="Meme generator"
-          type="Learning"
-          imageSrc={memegeneratorImg}
-          webHref="https://danieldevcode.github.io/memegenerator/"
-          codeHref="https://github.com/danieldevcode/memegenerator"
-        />
-      </div>
+      <div className="projects-container">{projectComponents}</div>
     </section>
   );
 }
