@@ -5,6 +5,7 @@ import Work from "./components/Work";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import "./styles/app.scss";
+import Footer from "./components/Footer";
 
 function App() {
   const navbar = useRef(null);
@@ -35,9 +36,9 @@ function App() {
     <div className="main-container">
       <Navbar reference={navbar} />
       <Home reference={homeSection} />
-      <About />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }

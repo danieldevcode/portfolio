@@ -4,29 +4,20 @@
 @import "variables";
 
 .main-container {
-  @include flex($direction: column, $gap: 64px);
+  @include flex($direction: column);
 }
 
 section {
-  // Flex
   @include flex($direction: column, $align: flex-start);
-  gap: 16px;
-
-  // Dimentions
-  padding: 24px 32px;
   width: 100%;
-
-  // Font
-  font-size: 26px;
-  line-height: 41px;
-
-  h2 {
-    align-self: flex-start;
-  }
+  padding: 0 24px;
+  overflow-x: hidden;
+  font-size: 16px;
 }
 
 .about,
 .work,
-.contact {
-  max-width: 1400px;
+.contact,
+.footer {
+  max-width: 1200px;
 }
