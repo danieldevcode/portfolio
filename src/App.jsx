@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Work from "./components/Work";
-import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./styles/app.scss";
 
 function App() {
@@ -35,9 +35,9 @@ function App() {
     <div className="main-container">
       <Navbar reference={navbar} />
       <Home reference={homeSection} />
-      <About />
       <Work />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,31 +1,35 @@
 import React from "react";
 import Button from "./Button";
-import "../styles/contact.scss";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "../styles/contact.scss";
+
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <h2>Contact me.</h2>
-      <p>Lets work together. I&apos;m available in:</p>
-      <div className="button-container">
+      <div>
+        <p>
+          Let&apos;s build your next project, <span>the right way.</span>
+        </p>
+      </div>
+      <div>
         <Button
-          text="Linkedin"
+          text="LinkedIn"
           icon={faLinkedin}
           href="https://www.linkedin.com/in/danielcortesdev/"
-          className={"btn-secondary"}
+          className={"btn-block"}
         />
         <Button
           text="Email"
-          icon={faAt}
-          href="mailto:danieldevcode@gmail.com"
-          className={"btn-secondary"}
+          icon={faEnvelope}
+          href="mailto:1vd9idpmg@mozmail.com"
+          className={"btn-block"}
         />
         <Button
-          text="Github"
+          text="GitHub"
           icon={faGithub}
           href="https://github.com/danieldevcode"
-          className={"btn-secondary"}
+          className={"btn-block"}
         />
       </div>
     </section>

@@ -12,7 +12,7 @@ function Work() {
 
   return (
     <section id="work" className="work">
-      <h2>Work</h2>
+      <h2 className="work-header">Work</h2>
       <div className="projects-container">{projectComponents}</div>
     </section>
   );

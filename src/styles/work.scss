@@ -1,9 +1,23 @@
-.projects-container {
-  align-self: flex-start;
-  
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 48px;
+@import "variables";
+
+.work {
+  padding-top: 24px;
+  margin-bottom: 80px;
+
+  .work-header {
+    font-family: $primary-font;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+
+  .projects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+    align-items: start;
+    gap: 56px;
+  }
 }

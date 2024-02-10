@@ -2,41 +2,40 @@
 @import "mixins";
 
 .home {
-  // Dimentions
   height: 100vh;
+  color: $alabaster-100;
+  background-color: $shark-950;
+  // margin-bottom: 24px;
 
-  color: $background;
-  background-color: $primary-color;
-}
-
-.home-title-container {
-  @include flex($direction: column, $gap: 32px);
-  align-self: center;
-  width: 100%;
-  max-width: 1400px;
-
-  img {
-    align-self: flex-start;
+  .home-title-container {
+    @include flex($direction: column, $gap: 24px);
+    align-self: center;
     width: 100%;
-    max-width: 366px;
+    max-width: 960px;
+
+    .home-title {
+      align-self: flex-start;
+    }
+
+    .home-subtitle {
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .home-title,
+    .home-subtitle {
+      font-family: $primary-font;
+      font-size: 42px;
+      line-height: 48px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    .home-image {
+      align-self: flex-start;
+      width: 100%;
+      max-width: 366px;
+      border-radius: 16px;
+    }
   }
-}
-
-.home-title,
-.home-subtitle {
-  font-family: $secondary-font;
-  font-weight: 700;
-}
-
-.home-title {
-  align-self: flex-start;
-  font-size: 36px;
-  line-height: 48px;
-}
-
-.home-subtitle {
-  align-self: flex-end;
-  text-align: right;
-  font-size: 36px;
-  line-height: 48px;
 }

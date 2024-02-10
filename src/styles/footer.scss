@@ -1,0 +1,37 @@
+@import "variables";
+
+.footer {
+  width: 100%;
+  padding: 48px 24px;
+  border-top: 1px solid $shark-950;
+
+  // Logo
+  & > a {
+    display: block;
+    margin-bottom: 24px;
+
+    img {
+      height: 24px;
+    }
+  }
+
+  // Resources
+  ul {
+    list-style: none;
+    margin-bottom: 24px;
+
+    li {
+      display: inline;
+      margin-right: 16px;
+
+      a {
+        color: $shark-950;
+        text-decoration: none;
+
+        &:hover {
+          color: $shark-500;
+        }
+      }
+    }
+  }
+}

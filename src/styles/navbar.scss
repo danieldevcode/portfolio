@@ -11,8 +11,8 @@ header {
 .nav {
   padding: 32px 0;
   font-family: $secondary-font;
-  font-size: 20px;
-  background-color: $primary-color;
+  font-size: 16px;
+  background-color: $shark-950;
   transition: background 0.3s;
   ul {
     @include flex($gap: 12px);
@@ -23,7 +23,7 @@ header {
     a {
       padding: 4px;
       border: 2px solid transparent;
-      color: $background;
+      color: $alabaster-100;
       text-decoration: none;
 
       transition:
@@ -31,22 +31,20 @@ header {
         color 0.3s;
 
       &:hover {
-        color: lighten($color: $background, $amount: 100);
-        border-bottom: 2px solid $background;
+        border-bottom: 2px solid $alabaster-100;
       }
     }
   }
 }
 
 .nav-secondary {
-  background-color: $background;
+  background-color: $alabaster-100;
   li {
     a {
-      color: $primary-color;
+      color: $shark-950;
 
       &:hover {
-        color: darken($color: $primary-color, $amount: 100);
-        border-bottom: 2px solid $primary-color;
+        border-bottom: 2px solid $shark-950;
       }
     }
   }

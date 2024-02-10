@@ -1,13 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 // Fonts
-$primary-font: "Raleway", sans-serif;
-$secondary-font: "Cardo", serif;
+$primary-font: "Noto Serif", sans-serif;
+$secondary-font: "Noto Sans", serif;
+
+
 
 // Colors
-$primary-color: #212529;
-$action-color: #5438dc;
-$background: #f8f9fa;
+$shark-50: #f4f6f7;
+$shark-100: #e3e7ea;
+$shark-200: #cbd3d6;
+$shark-300: #a6b4ba;
+$shark-400: #7a8c96;
+$shark-500: #5f717b;
+$shark-600: #515f69;
+$shark-700: #465058;
+$shark-800: #3e454c;
+$shark-900: #373d42;
+$shark-950: #212529;
 
-// Scroll padding
+$alabaster-50: #f8f9fa;
+$alabaster-100: #eceff2;
+$alabaster-200: #d6dce1;
+$alabaster-300: #b2bec7;
+$alabaster-400: #889ba8;
+$alabaster-500: #697e8e;
+$alabaster-600: #546775;
+$alabaster-700: #45535f;
+$alabaster-800: #3c4750;
+$alabaster-900: #353d45;
+$alabaster-950: #23292e;
+
 $scroll-padding: 0px;

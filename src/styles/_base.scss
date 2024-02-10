@@ -16,22 +16,8 @@ html {
 }
 
 body {
-  // Font
   font-size: 16px;
-  font-family: $primary-font;
-  color: $primary-color;
-
-  // Background
-  background-color: $background;
-}
-
-h2 {
   font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 51px;
-}
-
-ul {
-  margin-left: 24px;
+  color: $shark-950;
+  background-color: $alabaster-100;
 }

@@ -10,8 +10,12 @@ function Button({ text, href, icon, size, className }) {
       target="_blank"
       rel="noreferrer"
     >
-      <FontAwesomeIcon icon={icon} size={size ? size : "sm"} />
-      <p className="btn-text">{text}</p>
+      <FontAwesomeIcon
+        icon={icon}
+        size={size ? size : "sm"}
+        className="btn-icon"
+      />
+      {text ? <p className="btn-label">{text}</p> : null}
     </a>
   );
 }
