@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/navbar.scss";
 
 function Navbar({ reference }) {
@@ -19,9 +19,6 @@ function Navbar({ reference }) {
       </nav>
     </header>
   );
-
-  
-
 }
 
 export default Navbar;

@@ -2,10 +2,9 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Work from "./components/Work";
-import About from "./components/About";
 import Contact from "./components/Contact";
-import "./styles/app.scss";
 import Footer from "./components/Footer";
+import "./styles/app.scss";
 
 function App() {
   const navbar = useRef(null);
