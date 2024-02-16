@@ -8,8 +8,7 @@
   margin-bottom: 64px;
   gap: 24px;
 
-  // Header container
-  & > div:nth-of-type(1) {
+  .contact-header {
     font-family: $secondary-font;
     color: $alabaster-200;
     background-color: $shark-950;
@@ -20,13 +19,12 @@
     text-align: left;
 
     span {
-      font-weight: bold;
+      font-weight: 700;
       color: $alabaster-100;
     }
   }
 
-  // Buttons container
-  & > div:nth-of-type(2) {
+  .contact-buttons-container {
     @include flex($direction: column, $gap: 8px);
     width: 100%;
   }

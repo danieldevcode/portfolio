@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:wght@400;700&display=swap");
+
 // Fonts
-$primary-font: "Noto Serif", sans-serif;
-$secondary-font: "Noto Sans", serif;
+$primary-font: "Noto Serif", serif;
+$secondary-font: "Noto Sans", sans-serif;
 
-
+$scroll-padding: 0px;
 
 // Colors
 $shark-50: #f4f6f7;
@@ -30,5 +30,3 @@ $alabaster-700: #45535f;
 $alabaster-800: #3c4750;
 $alabaster-900: #353d45;
 $alabaster-950: #23292e;
-
-$scroll-padding: 0px;

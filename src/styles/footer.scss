@@ -5,8 +5,7 @@
   padding: 48px 24px;
   border-top: 1px solid $shark-950;
 
-  // Logo
-  & > a {
+  .footer-logo {
     display: block;
     margin-bottom: 24px;
 
@@ -15,8 +14,7 @@
     }
   }
 
-  // Resources
-  ul {
+  .footer-list {
     list-style: none;
     margin-bottom: 24px;
 
@@ -33,5 +31,9 @@
         }
       }
     }
+  }
+
+  .footer-copyright {
+    font-size: 16px;
   }
 }

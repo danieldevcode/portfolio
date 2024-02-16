@@ -7,12 +7,10 @@ import "../styles/contact.scss";
 function Contact() {
   return (
     <section id="contact" className="contact">
-      <div>
-        <p>
-          Let&apos;s build your next project, <span>the right way.</span>
-        </p>
-      </div>
-      <div>
+      <p className="contact-header">
+        Let&apos;s build your next project, <span>the right way.</span>
+      </p>
+      <div className="contact-buttons-container">
         <Button
           text="LinkedIn"
           icon={faLinkedin}

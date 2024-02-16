@@ -1,15 +1,24 @@
-import biblebitsImg from "/biblebits.png";
-import randomquotemachineImg from "/randomquotemachine.png";
-import tenziesImg from "/tenzies.png";
-import markdownImg from "/markdown-previewer.png";
-import drumlaunchpadImg from "/drumlaunchpad.png";
-import calculatorImg from "/calculator.png";
-import clockImg from "/25plus5clock.png";
+import one312w from "/images/minified/biblebits.png-312px.min.webp";
+import one505w from "/images/minified/biblebits.png-505px.min.webp";
+import two312w from "/images/minified/randomquotemachine.png-312px.min.webp";
+import two505w from "/images/minified/randomquotemachine.png-505px.min.webp";
+import three312w from "/images/minified/tenzies.png-312px.min.webp";
+import three505w from "/images/minified/tenzies.png-505px.min.webp";
+import four312w from "/images/minified/markdown-previewer.png-312px.min.webp";
+import four505w from "/images/minified/markdown-previewer.png-505px.min.webp";
+import five312w from "/images/minified/drumlaunchpad.png-312px.min.webp";
+import five505w from "/images/minified/drumlaunchpad.png-505px.min.webp";
+import six312w from "/images/minified/calculator.png-312px.min.webp";
+import six505w from "/images/minified/calculator.png-505px.min.webp";
+import seven312w from "/images/minified/25plus5clock.png-312px.min.webp";
+import seven505w from "/images/minified/25plus5clock.png-505px.min.webp";
 
+
+// TODO: 312w image is to small, create a bigger
 const projects = [
   {
     title: "Biblebits",
-    imageSrc: biblebitsImg,
+    imgSrc: { srcSet: `${one312w} 312w, ${one505w} 505w`, type: "image/webp" },
     webHref: "https://biblebits.danielcortes.tech/",
     codeHref: "https://github.com/danieldevcode/biblebits",
     description:
@@ -17,7 +26,10 @@ const projects = [
   },
   {
     title: "25 + 5 clock",
-    imageSrc: clockImg,
+    imgSrc: {
+      srcSet: `${seven312w} 312w, ${seven505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/25plus5clock/",
     codeHref: "https://github.com/danieldevcode/25plus5clock",
     description:
@@ -25,7 +37,10 @@ const projects = [
   },
   {
     title: "Markdown previewer",
-    imageSrc: markdownImg,
+    imgSrc: {
+      srcSet: `${four312w} 312w, ${four505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/markdown-previewer/",
     codeHref: "https://github.com/danieldevcode/markdown-previewer",
     description:
@@ -33,7 +48,10 @@ const projects = [
   },
   {
     title: "Calculator",
-    imageSrc: calculatorImg,
+    imgSrc: {
+      srcSet: `${six312w} 312w, ${six505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/calculator",
     codeHref: "https://github.com/danieldevcode/calculator",
     description:
@@ -41,14 +59,20 @@ const projects = [
   },
   {
     title: "Drum launchpad",
-    imageSrc: drumlaunchpadImg,
+    imgSrc: {
+      srcSet: `${five312w} 312w, ${five505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/drum-launchpad",
     codeHref: "https://github.com/danieldevcode/drum-launchpad",
     description: "Have some fun making your own beats.",
   },
   {
     title: "Quotes",
-    imageSrc: randomquotemachineImg,
+    imgSrc: {
+      srcSet: `${two312w} 312w, ${two505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/randomquotemachine/",
     codeHref: "https://github.com/danieldevcode/randomquotemachine",
     description:
@@ -56,7 +80,10 @@ const projects = [
   },
   {
     title: "Tenzies",
-    imageSrc: tenziesImg,
+    imgSrc: {
+      srcSet: `${three312w} 312w, ${three505w} 505w`,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/tenzies/",
     codeHref: "https://github.com/danieldevcode/tenzies",
     description: "Play Tenzies and see how fast can you beat the game.",

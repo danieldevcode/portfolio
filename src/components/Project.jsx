@@ -4,10 +4,21 @@ import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../styles/project.scss";
 
-function Project({ title, imageSrc, description, webHref, codeHref }) {
+function Project({ title, imgSrc, description, webHref, codeHref }) {
   return (
     <article className="project">
-      <img className="project-img" src={imageSrc} alt={title} />
+      <picture>
+        <source srcSet={imgSrc.srcSet} type={imgSrc.type} />
+        {/* //TODO: Ask copilot about the default img */}
+        <img
+          className="project-img"
+          src={""}
+          alt={title}
+          loading="lazy"
+          fetchpriority="low"
+        />
+      </picture>
+
       <h3 className="project-header">{title}</h3>
       {description ? (
         <p className="project-description">{description}</p>
