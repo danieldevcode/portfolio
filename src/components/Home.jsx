@@ -1,5 +1,6 @@
 import React from "react";
-import profile from "/images/minified/profile.jpg-312px.min.webp";
+import profile500wWebp from "/images/minified/profile-500px.min.webp";
+import profile500wJpeg from "/images/minified/profile-500px.min.jpeg";
 import "../styles/home.scss";
 
 function Home({ reference }) {
@@ -9,15 +10,17 @@ function Home({ reference }) {
         <h1 className="home-title">
           Daniel <br /> Cortes
         </h1>
-        {/* //TODO: replace img with picture, 312w 505w */}
-        <img
-          src={profile}
-          alt="Daniel Cortes profile"
-          className="home-image"
-          width="2"
-          height="1"
-          fetchpriority="high"
-        />
+        <picture>
+          <source srcSet={`${profile500wWebp} 500w`} type="image/webp" />
+          <img
+            src={profile500wJpeg}
+            alt="Daniel Cortes profile"
+            className="home-image"
+            fetchpriority="high"
+            width="2"
+            height="1"
+          />
+        </picture>
         <h2 className="home-subtitle">
           Web <br /> developer
         </h2>

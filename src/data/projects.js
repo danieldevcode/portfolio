@@ -1,24 +1,33 @@
-import one312w from "/images/minified/biblebits.png-312px.min.webp";
-import one505w from "/images/minified/biblebits.png-505px.min.webp";
-import two312w from "/images/minified/randomquotemachine.png-312px.min.webp";
-import two505w from "/images/minified/randomquotemachine.png-505px.min.webp";
-import three312w from "/images/minified/tenzies.png-312px.min.webp";
-import three505w from "/images/minified/tenzies.png-505px.min.webp";
-import four312w from "/images/minified/markdown-previewer.png-312px.min.webp";
-import four505w from "/images/minified/markdown-previewer.png-505px.min.webp";
-import five312w from "/images/minified/drumlaunchpad.png-312px.min.webp";
-import five505w from "/images/minified/drumlaunchpad.png-505px.min.webp";
-import six312w from "/images/minified/calculator.png-312px.min.webp";
-import six505w from "/images/minified/calculator.png-505px.min.webp";
-import seven312w from "/images/minified/25plus5clock.png-312px.min.webp";
-import seven505w from "/images/minified/25plus5clock.png-505px.min.webp";
+import a500wWebp from "/images/minified/biblebits-500px.min.webp";
+import a500wJpeg from "/images/minified/biblebits-500px.min.jpeg";
+import a700wWebp from "/images/minified/biblebits-700px.min.webp";
+import b500wWebp from "/images/minified/randomquotemachine-500px.min.webp";
+import b500wJpeg from "/images/minified/randomquotemachine-500px.min.jpeg";
+import b700wWebp from "/images/minified/randomquotemachine-700px.min.webp";
+import c500wWebp from "/images/minified/tenzies-500px.min.webp";
+import c500wJpeg from "/images/minified/tenzies-500px.min.jpeg";
+import c700wWebp from "/images/minified/tenzies-700px.min.webp";
+import d500wWebp from "/images/minified/markdown-previewer-500px.min.webp";
+import d500wJpeg from "/images/minified/markdown-previewer-500px.min.jpeg";
+import d700wWebp from "/images/minified/markdown-previewer-700px.min.webp";
+import e500wWebp from "/images/minified/drumlaunchpad-500px.min.webp";
+import e500wJpeg from "/images/minified/drumlaunchpad-500px.min.jpeg";
+import e700wWebp from "/images/minified/drumlaunchpad-700px.min.webp";
+import f500wWebp from "/images/minified/calculator-500px.min.webp";
+import f500wJpeg from "/images/minified/calculator-500px.min.jpeg";
+import f700wWebp from "/images/minified/calculator-700px.min.webp";
+import g500wWebp from "/images/minified/25plus5clock-500px.min.webp";
+import g500wJpeg from "/images/minified/25plus5clock-500px.min.jpeg";
+import g700wWebp from "/images/minified/25plus5clock-700px.min.webp";
 
-
-// TODO: 312w image is to small, create a bigger
 const projects = [
   {
     title: "Biblebits",
-    imgSrc: { srcSet: `${one312w} 312w, ${one505w} 505w`, type: "image/webp" },
+    image: {
+      srcSet: `${a500wWebp} 500w, ${a700wWebp} 700w`,
+      src: a500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://biblebits.danielcortes.tech/",
     codeHref: "https://github.com/danieldevcode/biblebits",
     description:
@@ -26,8 +35,9 @@ const projects = [
   },
   {
     title: "25 + 5 clock",
-    imgSrc: {
-      srcSet: `${seven312w} 312w, ${seven505w} 505w`,
+    image: {
+      srcSet: `${g500wWebp} 500w, ${g700wWebp} 700w`,
+      src: g500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/25plus5clock/",
@@ -37,8 +47,9 @@ const projects = [
   },
   {
     title: "Markdown previewer",
-    imgSrc: {
-      srcSet: `${four312w} 312w, ${four505w} 505w`,
+    image: {
+      srcSet: `${d500wWebp} 500w, ${d700wWebp} 700w`,
+      src: d500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/markdown-previewer/",
@@ -48,8 +59,9 @@ const projects = [
   },
   {
     title: "Calculator",
-    imgSrc: {
-      srcSet: `${six312w} 312w, ${six505w} 505w`,
+    image: {
+      srcSet: `${f500wWebp} 500w, ${f700wWebp} 700w`,
+      src: f500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/calculator",
@@ -59,8 +71,9 @@ const projects = [
   },
   {
     title: "Drum launchpad",
-    imgSrc: {
-      srcSet: `${five312w} 312w, ${five505w} 505w`,
+    image: {
+      srcSet: `${e500wWebp} 500w, ${e700wWebp} 700w`,
+      src: e500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/drum-launchpad",
@@ -69,8 +82,9 @@ const projects = [
   },
   {
     title: "Quotes",
-    imgSrc: {
-      srcSet: `${two312w} 312w, ${two505w} 505w`,
+    image: {
+      srcSet: `${b500wWebp} 500w, ${b700wWebp} 700w`,
+      src: b500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/randomquotemachine/",
@@ -80,8 +94,9 @@ const projects = [
   },
   {
     title: "Tenzies",
-    imgSrc: {
-      srcSet: `${three312w} 312w, ${three505w} 505w`,
+    image: {
+      srcSet: `${c500wWebp} 500w, ${c700wWebp} 700w`,
+      src: c500wJpeg,
       type: "image/webp",
     },
     webHref: "https://danieldevcode.github.io/tenzies/",
