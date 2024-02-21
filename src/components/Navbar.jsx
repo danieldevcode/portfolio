@@ -4,8 +4,8 @@ import "../styles/navbar.scss";
 function Navbar({ reference }) {
   return (
     <header>
-      <nav id="nav" className="nav" ref={reference}>
-        <ul>
+      <nav id="nav" className="nav nav-primary" ref={reference}>
+        <ul className="nav-list">
           <li>
             <a href="#home">Home</a>
           </li>

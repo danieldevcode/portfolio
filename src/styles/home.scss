@@ -2,7 +2,8 @@
 @import "mixins";
 
 .home {
-  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
   color: $alabaster-100;
   background-color: $shark-950;
 
@@ -30,11 +31,15 @@
       text-transform: uppercase;
     }
 
-    .home-image {
+    picture {
       align-self: flex-start;
+    }
+
+    .home-image {
       width: 100%;
       max-width: 366px;
       height: auto;
+      aspect-ratio: 2 / 1;
       border-radius: 16px;
     }
   }
