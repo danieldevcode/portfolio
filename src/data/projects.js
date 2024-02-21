@@ -1,15 +1,33 @@
-import biblebitsImg from "/biblebits.png";
-import randomquotemachineImg from "/randomquotemachine.png";
-import tenziesImg from "/tenzies.png";
-import markdownImg from "/markdown-previewer.png";
-import drumlaunchpadImg from "/drumlaunchpad.png";
-import calculatorImg from "/calculator.png";
-import clockImg from "/25plus5clock.png";
+import a500wWebp from "/images/minified/biblebits-500px.min.webp";
+import a500wJpeg from "/images/minified/biblebits-500px.min.jpeg";
+import a700wWebp from "/images/minified/biblebits-700px.min.webp";
+import b500wWebp from "/images/minified/randomquotemachine-500px.min.webp";
+import b500wJpeg from "/images/minified/randomquotemachine-500px.min.jpeg";
+import b700wWebp from "/images/minified/randomquotemachine-700px.min.webp";
+import c500wWebp from "/images/minified/tenzies-500px.min.webp";
+import c500wJpeg from "/images/minified/tenzies-500px.min.jpeg";
+import c700wWebp from "/images/minified/tenzies-700px.min.webp";
+import d500wWebp from "/images/minified/markdown-previewer-500px.min.webp";
+import d500wJpeg from "/images/minified/markdown-previewer-500px.min.jpeg";
+import d700wWebp from "/images/minified/markdown-previewer-700px.min.webp";
+import e500wWebp from "/images/minified/drumlaunchpad-500px.min.webp";
+import e500wJpeg from "/images/minified/drumlaunchpad-500px.min.jpeg";
+import e700wWebp from "/images/minified/drumlaunchpad-700px.min.webp";
+import f500wWebp from "/images/minified/calculator-500px.min.webp";
+import f500wJpeg from "/images/minified/calculator-500px.min.jpeg";
+import f700wWebp from "/images/minified/calculator-700px.min.webp";
+import g500wWebp from "/images/minified/25plus5clock-500px.min.webp";
+import g500wJpeg from "/images/minified/25plus5clock-500px.min.jpeg";
+import g700wWebp from "/images/minified/25plus5clock-700px.min.webp";
 
 const projects = [
   {
     title: "Biblebits",
-    imageSrc: biblebitsImg,
+    image: {
+      srcSet: `${a500wWebp} 500w, ${a700wWebp} 700w`,
+      src: a500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://biblebits.danielcortes.tech/",
     codeHref: "https://github.com/danieldevcode/biblebits",
     description:
@@ -17,7 +35,11 @@ const projects = [
   },
   {
     title: "25 + 5 clock",
-    imageSrc: clockImg,
+    image: {
+      srcSet: `${g500wWebp} 500w, ${g700wWebp} 700w`,
+      src: g500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/25plus5clock/",
     codeHref: "https://github.com/danieldevcode/25plus5clock",
     description:
@@ -25,7 +47,11 @@ const projects = [
   },
   {
     title: "Markdown previewer",
-    imageSrc: markdownImg,
+    image: {
+      srcSet: `${d500wWebp} 500w, ${d700wWebp} 700w`,
+      src: d500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/markdown-previewer/",
     codeHref: "https://github.com/danieldevcode/markdown-previewer",
     description:
@@ -33,7 +59,11 @@ const projects = [
   },
   {
     title: "Calculator",
-    imageSrc: calculatorImg,
+    image: {
+      srcSet: `${f500wWebp} 500w, ${f700wWebp} 700w`,
+      src: f500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/calculator",
     codeHref: "https://github.com/danieldevcode/calculator",
     description:
@@ -41,14 +71,22 @@ const projects = [
   },
   {
     title: "Drum launchpad",
-    imageSrc: drumlaunchpadImg,
+    image: {
+      srcSet: `${e500wWebp} 500w, ${e700wWebp} 700w`,
+      src: e500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/drum-launchpad",
     codeHref: "https://github.com/danieldevcode/drum-launchpad",
     description: "Have some fun making your own beats.",
   },
   {
     title: "Quotes",
-    imageSrc: randomquotemachineImg,
+    image: {
+      srcSet: `${b500wWebp} 500w, ${b700wWebp} 700w`,
+      src: b500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/randomquotemachine/",
     codeHref: "https://github.com/danieldevcode/randomquotemachine",
     description:
@@ -56,7 +94,11 @@ const projects = [
   },
   {
     title: "Tenzies",
-    imageSrc: tenziesImg,
+    image: {
+      srcSet: `${c500wWebp} 500w, ${c700wWebp} 700w`,
+      src: c500wJpeg,
+      type: "image/webp",
+    },
     webHref: "https://danieldevcode.github.io/tenzies/",
     codeHref: "https://github.com/danieldevcode/tenzies",
     description: "Play Tenzies and see how fast can you beat the game.",

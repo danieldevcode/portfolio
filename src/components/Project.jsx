@@ -4,10 +4,22 @@ import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../styles/project.scss";
 
-function Project({ title, imageSrc, description, webHref, codeHref }) {
+function Project({ title, image, description, webHref, codeHref }) {
   return (
     <article className="project">
-      <img className="project-img" src={imageSrc} alt={title} />
+      <picture>
+        <source srcSet={image.srcSet} type={image.type} />
+        <img
+          className="project-img"
+          src={image.src}
+          alt={title}
+          loading="lazy"
+          fetchpriority="low"
+          width="2"
+          height="1"
+        />
+      </picture>
+
       <h3 className="project-header">{title}</h3>
       {description ? (
         <p className="project-description">{description}</p>
